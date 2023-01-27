@@ -1,13 +1,11 @@
-import { createRoot } from "react-dom";
-import Pet from "./Pet.jsx";
+import { createRoot } from "react-dom/client";
+import SearchParams from "./SearchParams";
 
 const App = () => {
   return (
     <div>
       <h1>Adopt Me!</h1>
-      <Pet name="Jerry" animal="Mouse" breed="Pure" />
-      <Pet name="Goldie" animal="Fish" breed="Goldfish" />
-      <Pet name="Tom" animal="Cat" breed="Mixed" />
+      <SearchParams />
     </div>
   );
 };
